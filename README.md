@@ -4,13 +4,13 @@ Repo to store files from HTTP5111
 Description: This repo is for storing some information for the class for Web Development that I am taking on Wednesdays
 
 Instructions: 
-1. Go to class
-2. Study before taking the class
-3. Prepare any question
-4. Learn HTML, CSS and JavaScript
+1. Do my assignments
+2. Pay attention to my professors
+3. Ask
+4. Self Study
 
 Links:
 <br>
-https://developer.mozilla.org/en-US/
+https://www.youtube.com/watch?v=FQdaUv95mR8
 <br>
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
+https://www.youtube.com/watch?v=HD13eq_Pmp8

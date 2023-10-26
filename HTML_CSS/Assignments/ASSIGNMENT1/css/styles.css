@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Russo+One&display=swap');
+body {
+    background-image: linear-gradient(to bottom , #d0c2f4, white);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    margin:0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Russo One', sans-serif;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+a, a:link {
+    color:#2a9134;
+    font-weight: bold;
+}
+a:visited {
+    color:#ff9100;
+}
+a:hover {
+    color:blue;
+}
+a:active {
+    color:black;
+}
+
+.bold-text{
+    font-weight: bold;
+    color: red;
+}
+
+.italic-bold-text{
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+}
+
+#header {
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+    padding: 0 1em;
+    position: sticky;
+    top: 0;
+}
+
+#header a,
+#header a:link,
+#header a:visited {
+  color: white;;
+  text-decoration:none;
+}
+
+#header .photo-shoot,
+#header .photo-shoot:link,
+#header .photo-shoot:visited {
+  color: #74c69d;
+}
+
+#header .sign-in-up .sigin {
+    padding: 0.5em;
+    color: #FECC1E;
+}
+
+#header .sign-in-up .sigup {
+    padding: 0.5em;
+    color: #74c69d;
+    border: 3px solid #74c69d;
+    border-radius: 15px;
+}
+
+.menu-dropdown li{
+    padding: 2px 0;
+}
+
+.inline-menu ul {
+    position:absolute;
+    left:-10000px; 
+    width:100%;
+    background-color: #74c69d;
+    border-radius: 5px;
+}
+
+.inline-menu li {
+    position:relative;
+}
+
+.inline-menu li:hover > ul {
+    left:0%;
+}
+
+.inline-menu ul li:hover > ul {
+    left:100%;
+    top:0;
+}
+
+.main-menu ul, .list-restaurant ol, .social-media ul, .footer-menu ul{
+    padding: 0;
+}
+
+.main-menu li, .sign-in-up li,  .list-restaurant ol li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 2em;
+}
+
+main, .div-footer {
+    max-width: 90%;
+    margin: auto auto;
+}
+
+.page-content {
+    display: flex;
+    justify-content: center;
+    gap:1.5em;
+    margin-top: 1em;
+    flex-wrap: wrap;
+}
+
+.post-page-content{
+    flex-basis:0;
+    flex-grow:3;
+    border-style: dotted;
+    padding: 0 1em;
+    background-color:#fefae0;
+    border-radius: 20px; 
+}
+
+.aside-page-content{
+    flex-basis:0;
+    flex-grow:1;
+}
+
+.list-restaurant ol{
+    text-align: center;
+}
+
+.article-header {
+    border-bottom: 2px solid gray;
+    margin-bottom: 1em;
+}
+
+.container-img-post {
+    text-align: center;
+}
+
+#sidebar img{
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+#sidebar #recommended img{
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 0%;
+}
+
+.picture-post {
+    width: 80%;
+    margin-top: 20px
+}
+
+.picture-list {
+    width: 350px;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction : column;
+    gap: 1em;
+}
+
+#sidebar section {
+    background-color:#fefae0;
+    padding: 1em;
+    border: 3px dotted black;
+    border-radius: 20px; 
+}
+
+#sidebar h2 {
+    text-align: center;
+    margin: 0;
+}
+
+#sidebar div, #sidebar div p {
+    text-align: center;
+}
+
+form {
+    background-color: #9786F8;
+    margin-bottom: 1em;
+    padding: 1.5em;
+    border-radius:20px;
+}
+
+form h3 {
+    margin-top: 0;
+}
+
+form div {
+    padding-bottom: 0.5em;
+}
+
+form ul, .links-trends {
+    list-style: none;
+    padding: 0;
+}
+
+form li, .links-trends li {
+    display: inline-block;
+    margin-bottom: 0.1em;
+}
+
+form span{
+    font-size: 10em;
+}
+
+form span:hover{
+    color: white;
+}
+
+form input:checked + label span {
+    color: #74c69d;
+}
+
+input, textarea {
+    border-radius: 5px;
+    font-family: 'Fredoka', sans-serif;
+    padding: 0.5em;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+}
+
+button {
+    padding: 1em;
+    background-color: #f5cac3;
+    border: 3px solid rgb(72, 70, 70);
+    border-radius:20px;
+    box-shadow: 2px 2px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #bc6c25;
+    color: white;
+}
+
+footer {
+    background-image: linear-gradient(to top , #d0c2f4, white);
+    background-repeat: no-repeat;
+}
+
+.div-footer{
+    margin-top: 20px;
+}
+
+.content-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;  
+    flex-wrap: wrap;  
+}
+
+.content-footer h2, .content-footer h3 {
+    margin: 0;
+}
+
+.content-footer .social-media{
+    flex-basis:0;
+    flex-grow:3;
+}
+.content-footer div{
+    flex-basis:0;
+    flex-grow:1;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid gray;
+}
+
+.social-media a,
+.social-media a:link,
+.social-media a:visited {
+    font-size: 20px;
+    color: black;
+    text-decoration:none;
+}
+
+.social-media a:hover {
+    color:blue;
+}
+
+.social-media li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 1em;
+}
+
+.footer-menu a,
+.footer-menu a:link,
+.footer-menu a:visited {
+    color: gray;
+    text-decoration:none;
+    font-weight:normal;
+}
+
+.footer-menu li {
+    list-style-type: none;
+}
+
+.links-trends a,
+.links-trends a:link,
+.links-trends a:visited {
+    color: gray;
+    text-decoration:none;
+    font-weight:normal;
+    background-color: rgb(189, 186, 186);
+}
+
+.aside-recommended {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.aside-recommended p {
+    margin: 0;
+}
+
+#recommended ul{
+    padding: 0;
+}
+
+#recommended li {
+    list-style-type: none;
+}
+
+#recommended a,
+#recommended a:link,
+#recommended a:visited {
+    color: black;
+    text-decoration:none;
+}
+
+#sidebar #lates-videos {
+    background-color:#d0c2f4;
+}
+
+#sidebar #lates-videos img{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 0%;
+}
+
+

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/*************************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. GENERAL/DEFAULT STYLES
+ * 2. HEADER
+ * 3. MAIN CONTENT
+ * 4. FOOTER
+ *************************************************************/
+
+/* 1. GENERAL/DEFAULT STYLES */
+:root {
+  --accent-color: #2B0404;
+  --second-accent-color: #FFFFFF;
+  --third-accent-color: #AD00FF;
+  --fourth-accent-color: #000;
+  --fifth-accent-color: rgba(0, 0, 0, 0.25);
+}
+
+html {
+  box-sizing:border-box;
+  font:500 1em "Poppins", sans-serif;
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+body {
+  margin:0;
+}
+.content-wrapper {
+  max-width:1300px; 
+  margin:0 auto; 
+}
+h1 {
+  font-family:"Poppins", sans-serif;
+  font-weight:700;
+}
+h2{
+  margin: 0; 
+  font-size:2em; /* 32px */
+}
+#site-name a{
+  color:var(--accent-color);
+  text-shadow: 0 4px 4px var(--fifth-accent-color);
+}
+a {
+  color:var(--fourth-accent-color);
+}
+
+a.button {
+  background-color: #fff;
+  font-size:1.25em; 
+  color:var(--third-accent-color);
+  text-decoration:none;
+  padding:0.8em 3.1em;
+  display:inline-block;
+  /* I used box shadow to generate an inner border -> https://www.w3schools.com/cssref/css3_pr_box-shadow.php */
+  box-shadow: 0px 0px 0px 5px var(--third-accent-color) inset;
+  border-radius:36px;
+
+
+  /* border: 5px solid var(--third-accent-color); I didn't use it because it increases the height of my button, 
+  Since the height of the button in Figma is 63 px but when I apply this border it makes the height around 71 px*/ 
+}
+a.button:hover {
+  background-color:var(--accent-color);
+}
+
+/* 2. HEADER */
+#header {
+  padding: 1.6875em 1.25em 1.6875em 1.3125em;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+#header a {
+  text-decoration:none;
+}
+#header a:hover, a:hover {
+  color:var(--third-accent-color);
+}
+
+#main-navigation {
+  font-size:1.5em; /* 24px / 16px = 1.5 */
+}
+
+.menu {
+  display:flex;
+  list-style:none;
+  margin:0;
+  padding:0;
+  column-gap:3.25em; 
+}
+
+/* 3. MAIN CONTENT */
+
+.hero-wrapper {
+  background:url("../images/macarons.png") center center no-repeat;
+  display: flex;
+  text-align:center;
+}
+.hero-text {
+  padding: 9.5625em 0 12.625em 0; /* 153/16 */
+}
+.hero-text h1 {
+  margin:0;
+  color:#fff;
+  font-size: 4em; /* 64px / 16px */
+  text-shadow: 0 4px 4px var(--fifth-accent-color);
+  margin-bottom: 0.4375em; /* 28px / 64px */
+  width: 10.890625em; /* 697px */
+  /* padding-left: 301px;
+  padding-right: 302px; */
+}
+
+/* 4. FOOTER */
+#copyright{
+  font-family:"Poppins", sans-serif;
+  font-weight:300;
+  font-size:0.875em;
+  padding: 13px 0 15px 1.5em; 
+  /* 21px/14px = 1.5, I decided to use pixels in this one too since the value in em gave many decimal places */
+}

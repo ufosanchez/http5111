@@ -1,0 +1,86 @@
+body {
+    background-color:#95d5b2;
+    margin:0; 
+    font: normal 1em/1.25 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:normal;
+}
+
+a, a:link {
+    color:#2a9134;
+}
+a:visited {
+    color:#ff9100;
+}
+a:hover {
+    color:blue;
+}
+a:active {
+    color:black;
+}
+
+main {
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid rgb(72, 70, 70);
+    border-radius:50px;
+}
+
+main h1 {
+    border-bottom:2px solid #3535f6;
+}
+
+code {
+    background-color: lightgray;
+    padding: 0 0.5em 0 0.5em ;
+}
+
+#author, #comments p {
+    background-color: lightgray; 
+    padding: 1em;
+    border: 3px dashed black;
+}
+
+#author p {
+    font-style:italic;
+    color:#a22c29;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#footer section {
+    margin: 1em 0;
+    text-align: center;
+}
+
+form input {
+    margin-right:3em; 
+}
+
+#email, button {
+    padding: 1em;
+    background-color: #f5cac3;
+    border: 3px solid rgb(72, 70, 70);
+    border-radius:20px;
+    box-shadow: 5px 5px;
+}
+
+#email::placeholder {
+    color:white;
+    font-weight: bold;
+}
+
+button {
+    box-shadow: 0 0;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}

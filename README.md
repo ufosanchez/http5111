@@ -14,3 +14,8 @@ Links:
 https://www.youtube.com/watch?v=FQdaUv95mR8
 <br>
 https://www.youtube.com/watch?v=HD13eq_Pmp8
+
+| Class | Time |
+| ----------- | ----------- |
+| **JAVASCRIPT** | Wednesday 11:40 am - 2:20 pm |
+| **HTML-CSS** | Wednesday 3:20 pm - 6:00 pm |
